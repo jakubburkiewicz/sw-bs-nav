@@ -1,0 +1,27 @@
+{
+  "name": "sw-bs-nav",
+  "version": "0.0.1",
+  "description": "Bootstrap nav items activity directive for AngularJS",
+  "keywords": [
+    "nav",
+    "navigation",
+    "bootstrap",
+    "active",
+    "angular"
+  ],
+  "authors": [
+    {
+      "name": "Jakub Burkiewicz",
+      "email": "jakub@burkiewicz.eu"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakubburkiewicz/sw-bs-nav"
+  },
+  "main": "sw-bs-nav.js",
+  "dependencies": {
+    "angular": ">=1"
+  }
+}

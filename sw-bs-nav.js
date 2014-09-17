@@ -24,14 +24,16 @@ angular.module('sw.bs.nav', []).
         scope.updateLinksList = function() {
           angular.forEach(element.find('li'), function(value, key) {
             var li = angular.element(value);
-            var href = li.find('a').attr('href').replace('#', '');
+            var href = li.find('a').attr('href').split('/');
+            href = href[1];
             var pattern = new RegExp(href+"(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?", "gi");
             var currentPath = $location.path();
 
-            if(pattern.test(currentPath))
+            if(pattern.test(currentPath)) {
               li.addClass('active');
-            else
+            } else {
               li.removeClass('active');
+            }
           });
         };
 
